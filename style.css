@@ -1,0 +1,234 @@
+/* Variables  */
+
+:root{
+    --backgroundColor: #121212;
+    --secondary : #c43958;
+    --tertiary: #CD4d34;
+    --fourth: #929292;
+}
+
+/* Reset  */
+
+html, body , div , span , applet, object, 
+iframe, h1 , h2 , h3 , h4 , h5 , h6 , p , 
+blockquote, pre , a , abbr , acronym , address,
+big , cite , code , del dfn , em , img , ins
+, kbd , q , s , samp , small , strike , strong, 
+strong , sub , sup , tt , var , b , u , i , center 
+dl , dt , dd , ol , ul , li , fieldset , form , label 
+, legend , table , caption , tbody , tfoot , thead , tr , td
+, th , article , aside , canvas , details , embed , figure , 
+figcaption , nav , output, ruby , section , summary , time , 
+mark , audio , video {
+    margin: 0;
+    padding : 0 ;
+    border : 0; 
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article , aside , details , figcaption , figure , footer , 
+header , hgroup , menu , nav , section{
+    display: block;
+    
+}
+
+body{
+    line-height: 1;
+}
+
+ol , ul {
+    list-style: none;
+}
+
+blockquote{
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after{
+    content: '';
+    content: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* Base Styles  */
+
+
+body{
+    background-color: var(--backgroundColor);
+    color: white;
+}
+
+input{
+    outline: none;
+    border-radius: 12px;
+    padding: 4px 12px;
+    border: 1px solid #9893d8;
+    background-color: rgb(255, 255, 255 , 0.05);
+    color: white;
+}
+
+
+/* Font Style  */
+
+@font-face {
+    font-family: rubik;
+    src: url(fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url(fonts/OpenSans-Bold.ttf);
+}
+
+h2{
+    font-family: rubik;
+    font-size: 3rem;
+}
+
+body{
+    font-family: open-sans;
+}
+
+footer{
+    font-family: sans-serif;
+    color: var(--fourth);
+    font-size: 10px;
+}
+
+
+/* Mobile Style */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.search-bar{
+    display: flex;
+    align-items: center;
+}
+
+.header-text{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.main{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.book  li{
+    display: grid;
+    grid-template-columns: 50px  4fr 1fr;
+    /* justify-content: center; */
+    /* align-content: center; */
+    align-items: center;
+    gap: 5px;
+}
+
+
+.book li div div {
+    display: flex;
+    margin-top: 3px;
+    align-items: center;
+    gap: 8px;
+}
+
+.book-icon{
+    display: flex;
+    justify-content: center;
+    background-color: var(--tertiary);
+    border-radius: 3px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 5px;
+    background-color: #1c1c1c;
+    border-top: 2px var(--fourth) solid;
+}
+
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.first-icon{
+    stroke: var(--fourth);
+}
+
+
+svg{
+    fill: var(--fourth);
+}
+
+.first-icon:hover{
+    stroke: var(--secondary);
+}footer div:hover{
+    fill: ;
+}
+svg:hover{
+    fill: var(--secondary);
+    color: var(--secondary);
+}
+
+footer  div:hover{
+    fill: var(--secondary);
+    color: var(--secondary);
+}
+
+.read{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+}
+
+.books{
+    height: 68vh;
+    
+}
+
+li {
+    border-bottom:1px solid var(--fourth);
+    margin-bottom: 10px;
+    /* overflow: hidden; */
+}
+
+ul{
+    overflow: hidden;
+}
+.books{
+    overflow: scroll;
+}
+/* Small tablet */
+
+@media screen and (min-width : 620px) {
+    
+}
+
+/* Large tablet */
+
+@media screen and (min-width : 960px) {
+    
+}
+
+
+/* Desktop style */
+
+@media screen and (min-width : 1200px) {
+    
+}
