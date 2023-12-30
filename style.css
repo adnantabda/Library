@@ -64,6 +64,7 @@ table{
 body{
     background-color: var(--backgroundColor);
     color: white;
+    position: relative;
 }
 
 input{
@@ -130,7 +131,7 @@ nav{
 
 .book  li{
     display: grid;
-    grid-template-columns: 50px  4fr 1fr;
+    grid-template-columns: 50px  4fr 1fr 1fr;
     /* justify-content: center; */
     /* align-content: center; */
     align-items: center;
@@ -143,6 +144,9 @@ nav{
     margin-top: 3px;
     align-items: center;
     gap: 8px;
+    color: #9893d8;
+    font-family: rubik;
+    font-size: 12px;
 }
 
 .book-icon{
@@ -179,9 +183,12 @@ svg{
 
 .first-icon:hover{
     stroke: var(--secondary);
-}footer div:hover{
-    fill: ;
 }
+
+footer div:hover{
+    fill:var(--secondary) ;
+}
+
 svg:hover{
     fill: var(--secondary);
     color: var(--secondary);
@@ -198,15 +205,24 @@ footer  div:hover{
 }
 
 .books{
-    height: 68vh;
+    height: 58vh;
     
 }
 
 li {
-    border-bottom:1px solid var(--fourth);
-    margin-bottom: 10px;
+    /* border-bottom:1px solid var(--fourth); */
+    /* margin-bottom: 10px; */
     /* overflow: hidden; */
 }
+
+/* li:nth-child(2){
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2 , 1fr);
+} */
+
+
+
 
 ul{
     overflow: hidden;
@@ -214,6 +230,84 @@ ul{
 .books{
     overflow: scroll;
 }
+
+.Add-book img{
+    background-color: var(--secondary);
+    border-radius:5px ;
+    margin: 10px;
+}
+
+button{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button img:hover{
+    background-color: #CD4d34;
+}
+
+button:active{
+    transform: scale(0.8);
+}
+
+.fill-book{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+    flex-direction: column;
+    background-color: var(--secondary);
+    border-radius: 12px;
+    padding: 40px;
+    font-family: rubik;
+
+}
+
+.fill-book input{
+    border: 1px solid black;
+}
+
+
+.fill-book input {
+    margin-bottom: 8px;
+}
+
+.fill-book div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fill-book button{
+    border: 2px solid var(--secondary);
+    background-color: white;
+    border-radius: 12px;
+    color: black;
+}
+
+.fill-book button:hover{
+    background-color: var(--tertiary);
+    border-radius: none;
+    color: black;
+
+}
+
+li{
+    background-color: rgb(212, 140, 7);
+    padding: 6px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 /* Small tablet */
 
 @media screen and (min-width : 620px) {
