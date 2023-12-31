@@ -17,8 +17,8 @@
 
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="search by title">
-            <img src="assets/ic_search_48px.svg" alt="">
+            <input class="input" type="text" placeholder="search by title">
+            <img class="search" src="assets/ic_search_48px.svg" alt="">
         </div>
     </nav>
     <section class="header-text">
@@ -27,26 +27,35 @@
     <section class="main">
 
 
+        <div class="content">
+            <p>Books</p>
+            <img src="" alt="">
+            <p>status</p>
+            <p>Delete</p>
+        </div>
+
+
         <div class="books">
 
 
-            <ul class="book">
-                <li>
+            <ul class="book" id="first">
+                <li id="first-book">
                     <img src="assets/read-svgrepo-com (1).svg" alt="">
                     <div class="bk-desc">
-                        <p>Problem Solving with C++</p>
+                        <p>C++ Programming</p>
                         <div>
 
-                            <span>Author</span>
-                            <p>D s Malik</p>
+                            <span>Author:</span>
+                            <p>D.s Malik</p>
+                            <span>pages: 1758</span>
 
                         </div>
 
                     </div>
-                    <img src="assets/wrong-delete-remove-trash-minus-cancel-close-2-svgrepo-com.svg" alt="">
-                    <img src="assets/ic_delete_48px.svg" alt="">
+                    <img id="x" src="assets/wrong.svg" alt="">
+                    <img id="d" src="assets/ic_delete_48px.svg" alt="">
 
-                    
+
                 </li>
             </ul>
 
@@ -142,10 +151,10 @@
         </button>
 
         
-    <footer>
+    <!-- <footer>
 
 
-    <!-- <section class="footer"> -->
+
         <div>
             <svg  width="48px" height="48px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="first-icon" d="M13 12H21M13 8H21M13 16H21M6 7V17M6 17L3 14M6 17L9 14" stroke="#000000" stroke-width="2"
@@ -200,10 +209,10 @@
 
         </div>
 
-    <!-- </section> -->
+
     
     
-</footer>
+</footer> -->
 </div>
 
 
@@ -213,41 +222,52 @@
     <div>
 
         <label for="title">Title</label>
-        <input type="text" name="" id="title">
+        <input type="text" name="" id="title" required>
 
     </div>
     <div>
 
         <label for="author">Author</label>
-        <input type="text" name="" id="author">
+        <input type="text" name="" id="author" required>
 
     </div>
 
     <div>
 
         <label for="number-of-pages">Number of pages</label>
-        <input type="number" name="" id="number-of-pages">
+        <input type="number" name="" id="number-of-pages" required>
 
     </div>
     <div class="checkbox">
         <label for="checkbox">
             Have you read this Book ?
         </label>
-        <input type="checkbox" name="" id="checkbox">
+        <input type="checkbox" name="" id="checkbox" required>
     </div>
     <div class="btn-form">
         
         <button class="add-bk">
             Add
         </button>
-        <button class="close-form">
+        <!-- <button class="close-form">
             Close
-        </button>
+        </button> -->
 
     </div>
-    
 
 </form>
+
+
+<div class="search-book">
+    <p> title     <span class="search-display-title"></span></p>
+    <p> author     <span class="search-display-author"></span></p>
+    <p> pages      <span class="search-display-pages"></span></p>
+    <p> status    <span class="search-display-status"></span></p>
+
+
+
+
+</div>
 
 </body>
 
