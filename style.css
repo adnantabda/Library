@@ -63,7 +63,6 @@ table{
 
 body{
     background-color: var(--backgroundColor);
-    color: white;
     position: relative;
 }
 
@@ -92,17 +91,24 @@ input{
 h2{
     font-family: rubik;
     font-size: 3rem;
+    color:var(--secondary);
+}
+
+span{
+    color: black;
+}
+
+p{
+    color: rgb(86, 62, 17);
 }
 
 body{
     font-family: open-sans;
+    background-color: white;
+    background-image: url(assets/beeBackground.svg);
+  background-size:cover;
 }
 
-footer{
-    font-family: sans-serif;
-    color: var(--fourth);
-    font-size: 10px;
-}
 
 
 /* Mobile Style */
@@ -111,6 +117,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 
@@ -121,7 +128,7 @@ nav{
 
 .header-text{
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .main{
@@ -138,6 +145,16 @@ nav{
     gap: 5px;
 }
 
+.content{
+    display: grid;
+    grid-template-columns: 50px  4fr 1fr 1fr;
+    /* justify-content: center; */
+    /* align-content: center; */
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+
+}
 
 .book li div div {
     display: flex;
@@ -160,8 +177,8 @@ footer{
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
     gap: 5px;
-    background-color: #1c1c1c;
-    border-top: 2px var(--fourth) solid;
+    background-color: #19547b;
+    /* border-top: 2px var(--fourth) solid; */
 }
 
 
@@ -205,8 +222,12 @@ footer  div:hover{
 }
 
 .books{
-    height: 58vh;
+    height: 100%;
     
+}
+
+.main{
+    height: 67vh;
 }
 
 li {
@@ -256,6 +277,7 @@ button:active{
     transform: scale(0.8);
 }
 
+
 .fill-book{
     position: absolute;
     top: 50%;
@@ -300,12 +322,79 @@ button:active{
 }
 
 li{
-    background-color: rgb(212, 140, 7);
+    /* background-color: #d48c07; */
+    border-bottom: 1px solid var(--secondary);
     padding: 6px;
     margin-bottom: 5px;
     border-radius: 6px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+}
+
+li img:first-child{
+    background-color: var(--secondary);
+    padding: 8px;
+    border-radius: 6px;
+}
+
+
+nav{
+    padding-bottom: 15px;
+    background-size: cover;
+    background-color: var(--secondary);
+    /* background-image: linear-gradient(90deg , #efbf49 , var(--secondary)); */
+    /* background-image: url(assets/pngkey.com-website-background-png-4158399\(1\).png); */
+}
+
+.search-book{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+    flex-direction: column;
+    background-color: var(--secondary);
+    border-radius: 12px;
+    padding: 40px;
+    font-family: rubik;
+    
+}
+
+.search-bar input{
+    border: var(--tertiary);
+    box-shadow: 1px 1px 1px white;
+    background-color: var(--tertiary);
+}
+
+.search-book{
+    width: 50%;
+}
+.search-book > p {
+    font-family: rubik;
+    font-weight: 800;
+    color: white;
+}
+
+
+.search-display-title{
+    margin-left:  33px !important;
+}
+
+.search-display-author{
+    margin-left: 12px;
+}
+
+
+.search-display-pages{
+    margin-left: 16px ;
+}
+
+.search-display-status{
+    margin-left: 15px;
+}
+
+.search-book p{
+    margin: 8px;
 }
 
 /* Small tablet */
