@@ -60,6 +60,10 @@ addBook.addEventListener("click", () => {
     event.preventDefault()
 })
 
+closeForm.addEventListener("click" , ()=>{
+    fillBook.style.display = "none"
+    elmHolder.style.opacity = "1"
+})
 
 
 bookAdd.addEventListener("click", () => {
