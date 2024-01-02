@@ -6,7 +6,7 @@ the ability to delete books from the list. The project is built using HTML , CSS
 
 ## Live Demo 
 
-check out the live demo of the library project on [Github Pages](adnantabda.github.io/Library)
+check out the live demo of the library project on [Github Pages](https://adnantabda.github.io/Library/)
 
 ## Features 
 
