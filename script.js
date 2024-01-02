@@ -222,37 +222,9 @@ function displayBook() {
         li.appendChild(img3)
         img3.src = deleteIcon
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         console.log("this function is executed")
         book.appendChild(li)
-
-
-
-
-
     }
-
-
-
-
-
-
 
 }
 
