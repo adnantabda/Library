@@ -45,7 +45,7 @@ git clone https://github.com/adnantabda/Library.git
 ## screenshots 
 
 <div style="display: grid ; grid-template-columns : 1fr 1fr 1fr  1fr  ; gap: 20px" >
-<img src="assets/Screenshots/screenshot1.jpg">
+<img src="assets/Screenshots/screenshot1(1).jpg">
 <img src="assets/Screenshots/screenshot2.jpg">
 <img src="assets/Screenshots/screenshot3.jpg">
 </div>
